@@ -134,3 +134,17 @@
 .productCard img {
     border-radius: 6px;
 }
+
+@media screen and (max-width: 650px) {
+    .products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
