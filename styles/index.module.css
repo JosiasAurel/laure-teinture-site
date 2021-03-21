@@ -148,4 +148,14 @@
         align-items: center;
         text-align: center;
     }
+
+    .imageOne, .imageTwo {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+
+    .content h2 {
+        margin-top: 8em;
+    }
 }
