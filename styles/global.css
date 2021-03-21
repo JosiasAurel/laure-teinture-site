@@ -1,0 +1,9 @@
+
+body {
+    margin: 0 auto;
+}
+
+* {
+    transition: all 0.15s ease-in-out;
+    font-family: sans-serif;
+}

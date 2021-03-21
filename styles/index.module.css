@@ -1,0 +1,115 @@
+
+.homepage::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 10;
+}
+
+.header h1, .header button {
+    margin: 0 2em 0 1em;
+}
+
+.header button {
+    border: solid transparent;
+    border-radius: 10px;
+    padding: 0.2em 0.4em 0.2em 0.4em;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.header button:hover {
+    background-color: black;
+    color: white;
+}
+
+.header button:focus {
+    outline: none;
+}
+
+.contactCardClosed {
+    display: none;
+    visibility: hidden;
+}
+
+.contactCard {
+    max-width: 300px;
+    width: 250px;
+    box-shadow: 0 0 3px 1.5px rgba(207, 207, 207, 0.877);
+    border-radius: 6px;
+    height: 300px;
+    position: relative;
+    left: 70vw;
+    top: 3em;
+    text-align: center;
+    z-index: 8;
+}
+
+.contactCard span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    margin-right: 0.7em;
+    margin-left: 0.7em;
+}
+
+.contactCard span:hover {
+    background-color: rgb(199, 199, 199);
+}
+
+.content {
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content h2 {
+    margin-right: 2em;
+    font-size: 3em;
+}
+
+.showerImages {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -2em;
+    margin-left: 3em;
+}
+
+.showerImages img {
+    max-width: 350px;
+}
+
+.imageOne {
+    margin: 0.5em;
+    position: relative;
+    border: solid 1em khaki;
+}
+
+.imageTwo {
+    margin: 0.5em;
+    position: relative;
+    right: 5em;
+    border: solid 1em khaki;
+    top: 2em;
+}
+
+.sectionTwo {
+    margin-top: 4em;
+}
+
+.gotoshop {
+    padding: 0.5em 1em 0.5em 1em;
+    color: white;
+    background-color: blueviolet;
+}
