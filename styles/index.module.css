@@ -113,3 +113,24 @@
     color: white;
     background-color: blueviolet;
 }
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin: 4em 0.4em 0 0.4em;
+}
+
+.productCard {
+    box-shadow: 0 0 3px 1.5px rgba(199, 199, 199, 0.904);
+    border-radius: 6px;
+    padding: 1em;
+    max-width: 250px;
+    min-height: 250px;
+    min-width: 250px;
+    max-height: 250px;
+}
+
+.productCard img {
+    border-radius: 6px;
+}
