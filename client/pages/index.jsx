@@ -20,14 +20,14 @@ const Home = () => {
                         <img src="/images/IMG_20210321_120246.jpg" alt=""/>
                     </span>
                 </div>
-                <h2>Des Vetements De Qulatite a Bon Prix</h2>
+                <h2>Des Vetements De Qualite a Bon Prix</h2>
             </main>
 
             <section className={styles.sectionTwo}>
                 <Link href="/shop"> 
-                    <h3 className={styles.gotoshop}>
-                        Aller en Boutique
-                    </h3>
+                    <button className={styles.gotoshop}>
+                        Aller En Boutique
+                    </button>
                 </Link>
             </section>
 

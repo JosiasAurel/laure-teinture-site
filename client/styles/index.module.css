@@ -1,6 +1,15 @@
 
+.homePage {
+    z-index: -2;
+}
+
 .homepage::-webkit-scrollbar {
     display: none;
+}
+
+.headerNav {
+    max-height: 1px;
+    z-index: 5;
 }
 
 .header {
@@ -38,6 +47,7 @@
 .contactCardClosed {
     display: none;
     visibility: hidden;
+    z-index: 10;
 }
 
 .contactCard {
@@ -47,10 +57,11 @@
     border-radius: 6px;
     height: 300px;
     position: relative;
-    left: 70vw;
+    left: 20vw;
     top: 3em;
     text-align: center;
-    z-index: 8;
+    z-index: 10;
+    background-color: white;
 }
 
 .contactCard span {
@@ -60,6 +71,7 @@
     padding: 0.5em;
     margin-right: 0.7em;
     margin-left: 0.7em;
+    border-radius: 4px;
 }
 
 .contactCard span:hover {
@@ -74,8 +86,7 @@
 }
 
 .content h2 {
-    margin-right: 2em;
-    font-size: 3em;
+    font-size: 3em;margin-right: 2em;
 }
 
 .showerImages {
@@ -93,32 +104,45 @@
 .imageOne {
     margin: 0.5em;
     position: relative;
-    border: solid 1em khaki;
+    border: solid 1em white;
 }
 
 .imageTwo {
     margin: 0.5em;
     position: relative;
     right: 5em;
-    border: solid 1em khaki;
+    border: solid 1em white;
     top: 2em;
 }
 
 .sectionTwo {
-    margin-top: 4em;
+    margin: 4em 0 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gotoshop {
     padding: 0.5em 1em 0.5em 1em;
     color: white;
     background-color: blueviolet;
+    border: solid transparent;
+    border-radius: 5px;
+}
+
+.gotoshop:active {
+    transform: scale(0.9);
+}
+
+.gotoshop:focus {
+    outline: none;
 }
 
 .products {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1em;
-    margin: 4em 0.4em 0 0.4em;
+    margin: 4em 0.4em 2em 0.4em;
 }
 
 .productCard {
@@ -135,7 +159,7 @@
     border-radius: 6px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1040px) {
     .products {
         display: flex;
         flex-direction: column;
@@ -146,16 +170,31 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        text-align: center !important;
+    }
+
+    .showerImages {
+        position: relative;
+        right: 20vw;
     }
 
     .imageOne, .imageTwo {
-        max-width: 150px;
-        max-height: 150px;
+        max-width: 100px;
+        max-height: 100px;
     }
 
 
     .content h2 {
-        margin-top: 8em;
+        margin: 9em 0 0 0;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .content h2 {
+        margin-left: 1em;
+    }
+
+    .sectionTwo button {
+        margin-left: 5em;
     }
 }
